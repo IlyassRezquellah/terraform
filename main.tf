@@ -31,7 +31,7 @@ resource "snowflake_resource_monitor" "monitor1" {
   name         = "RM_HR_PRO"
   credit_quota = 15
   frequency       = "DAILY"
-  start_timestamp = "2023-12-22 00:00"
+  start_timestamp = "2023-12-29 00:00"
   end_timestamp   = "2024-12-07 00:00"
 
   notify_users = ["ILYASS"]

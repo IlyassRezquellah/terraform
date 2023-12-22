@@ -7,8 +7,7 @@ resource "snowflake_user" "user1" {
   comment      = "Primer usuario - mike"
   password     = "password"
   email        = "mike@heroes.com"
-  default_secondary_roles = ["ALL"]
-  default_role            = "ACCOUNTADMIN"
+  default_role            = "ADMIN"
 
   must_change_password = false
 }
@@ -19,7 +18,7 @@ resource "snowflake_user" "user2" {
   comment      = "Segundo usuario - johnny"
   password     = "password"
   email        = "johnny@heroes.com"
-
+  default_role            = "ONLYPRO"
 
   must_change_password = false
 }
@@ -30,7 +29,7 @@ resource "snowflake_user" "user3" {
   comment      = "Tercer usuario - Sarah"
   password     = "password"
   email        = "sarah@heroes.com"
-
+  default_role            = "ONLYDEV"
 
   must_change_password = false
 }
